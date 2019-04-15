@@ -1,0 +1,225 @@
+body{
+    padding:0;
+    margin: 0;
+}
+.title{
+    font-size:40px;
+    font-display: initial;
+    position: absolute;
+    font-style:initial;
+    color: #022140;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: oblique;
+}
+.nav{
+    width:100%;
+    height:60px;
+    background-color: rgb(180, 175, 175);
+    position: relative;
+}
+.nav .nav_header{
+    display: inline;
+}
+.nav .nav_header .nav_title{
+    display: inline-block;
+    font-size: 22px;
+    color: #002e5b;
+    padding: 10px;
+}
+.nav .nav_btn{
+display: none;
+}
+.nav .nav_link{
+display: inline-block;
+font-size:18px;
+float:right;
+}
+.nav .nav_link a{
+    text-align: center;
+    text-decoration: none;
+    color:#022140;
+    display: inline-block;
+    padding:10px 40px;
+}
+.nav_link a:hover{
+    background-color: #fff;
+    color:#002e5b;
+}
+.nav #nav_check{
+    display: none;
+}
+@media(max-width:700px){
+    .nav .nav_btn{
+        display: inline-block;
+        position:absolute;
+        top:0;
+        right:0;
+    }
+    .nav .nav_btn label{
+        display:inline-block;
+        width:50px;
+        height:50px;
+        padding:13px;
+    }
+    .nav .nav_btn label:hover{
+        background-color: e9d226;
+    }
+    .nav .nav_btn label span{
+        display: block;
+        width:25px;
+        height:10px;
+        border-top:2px solid#022140;
+    }
+    .nav .nav_link{
+        position:absolute;
+        width:100%;
+        background-color: rgb(180, 175, 175);
+        display: block;
+        height:0;
+        transition: .5s all ease-in-out;
+        overflow-y: hidden;
+        top:50px;
+        left:0;
+    }
+    .nav .nav_link a{
+        text-align:center;
+        width:100%;
+        display: block;
+    }
+    .nav #nav_check:not(:checked) + .nav_link{
+        height:0;
+    }
+    .nav #nav_check:checked + .nav_link{
+        height:75vh;
+        overflow-y:auto;
+    }
+}
+.container_1{
+    background-image: url("./images/architecture-bridge-connection-417054.jpg");
+    height:100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:500px){
+.container_1{
+    margin: 10px;
+    min-height:100%;
+}
+}
+.container{
+position: absolute;
+top: 50%;
+left:50%;
+transform: translate(-50%,-50%);
+}
+.container h3{
+    font-size:55px;
+    padding: 10px;
+    color:#52e3c2;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800px;
+    font-style: oblique;
+    text-align: center
+}
+.container h4{
+    color:#fff;
+    font-size: 25px;
+    text-align: center;
+}
+.click{
+  padding: 10px 40px;
+  margin:10px;
+  border:2px solid#fff;
+  text-decoration: none;
+  color:#022140;
+  background-color:rgba(255, 255, 255, 0.5);
+  text-align:center;
+  margin-top: 100px;
+}
+
+@media(max-width:900px){
+.click{
+flex-direction: column;
+display: inline-block;
+margin:10px auto;
+    }
+}
+.info{
+display:flex;
+justify-content:center;
+width:100%;
+height:200px;
+background-color: rgb(180, 175, 175);
+align-items: center;
+}
+.info3{
+flex:1;
+}
+ .info3 .input{
+    width:200px;
+    height:100px;
+    margin:10px;
+    text-align: center;
+}
+.info3 a{
+    text-decoration: none;
+    padding: 10px 40px;
+    border:1px solid#fff;
+    color:#022140;
+    text-align: center;
+    background-color:#52e3c2;}
+
+input{
+    width:300px;
+    height: 40px;
+   padding: 10px;
+   margin: 10px;
+}
+@media(max-width:800px){
+    .info{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+}
+.footer{
+    display:flex;
+    padding:20px;
+    background-color:orange;
+  }
+  .footer .item3{
+    flex:1;
+    padding:10px;
+    margin:0;
+    color:#fff;
+  }
+  #join{
+    width:80px;
+    height:36px
+  }
+  @media (max-width:800px){
+   .footer{
+     flex-direction:column; 
+    }
+  }
+  .footer{
+    display:flex;
+    padding:20px;
+    background-color:rgb(17, 195, 181);
+  }
+  .footer .item3{
+    flex:1;
+    padding:10px;
+    margin:0;
+    color:#fff;
+  }
+  #join{
+    width:80px;
+    height:36px
+  }
+  @media (max-width:800px){
+   .footer{
+     flex-direction:column; 
+    }
+  }
